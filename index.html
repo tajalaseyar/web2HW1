@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>afghani foods </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <h1>FOOD THAT YOU NEED TO TRY</h1>
+</header>
+
+    <div class="row">
+        <img class="pic1" src="https://i.pinimg.com/564x/84/31/a3/8431a377ca3929aab22d5892ae24aff9.jpg" alt="QABELI">
+        <img class="pic2" src="https://i.pinimg.com/564x/e9/c8/5b/e9c85b4ecf29b313c2d94c842f1a498f.jpg" alt="KHABAB">
+        <img class="pic3" src="https://i.pinimg.com/564x/fe/2c/bc/fe2cbc8d95b91fa38367602bac53a538.jpg" alt="ASHAK">
+        <img class="pic4" src="https://i.pinimg.com/564x/80/40/79/804079c0b4f1934d9e1638a3468022de.jpg" alt="LAMB CURRY">
+    </div>
+    <div class="main">
+        <div class="frame ">
+        <img id="main-pic" src="https://i.pinimg.com/564x/06/d3/d3/06d3d34992aaba744c45f978cf1b5ccd.jpg" alt="samosa">
+        <p class="captian">SAMOSA</p>
+    </div>
+</div>
+    <script>
+       console.log(document.querySelector(".pic1"))
+       document.querySelector(".pic1").onclick = function(){
+        document.querySelector("#main-pic").src = document.querySelector(".pic1").src
+        document.querySelector("#main-pic").alt = document.querySelector(".pic1").alt
+        document.querySelector(".captian").innerHTML = document.querySelector(".pic1").alt
+       } 
+
+       console.log(document.querySelector(".pic2"))
+       document.querySelector(".pic2").onclick = function(){
+        document.querySelector("#main-pic").src = document.querySelector(".pic2").src
+        document.querySelector("#main-pic").alt = document.querySelector(".pic2").alt
+        document.querySelector(".captian").innerHTML = document.querySelector(".pic2").alt
+       } 
+
+       console.log(document.querySelector(".pic1"))
+       document.querySelector(".pic3").onclick = function(){
+        document.querySelector("#main-pic").src = document.querySelector(".pic3").src
+        document.querySelector("#main-pic").alt = document.querySelector(".pic3").alt
+        document.querySelector(".captian").innerHTML = document.querySelector(".pic3").alt
+       } 
+
+       console.log(document.querySelector(".pic4"))
+       document.querySelector(".pic4").onclick = function(){
+        document.querySelector("#main-pic").src = document.querySelector(".pic4").src
+        document.querySelector("#main-pic").alt = document.querySelector(".pic4").alt
+        document.querySelector(".captian").innerHTML = document.querySelector(".pic4").alt
+       } 
+    </script>
+    
+</body>
+</html>
